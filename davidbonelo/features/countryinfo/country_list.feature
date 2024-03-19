@@ -3,7 +3,7 @@ Feature: Obtain countries list SOAP API
 
   Scenario: Get countries list with ISO code
     When The integration service requests the list of all countries
-    Then he should get a successfull response with the full list of countries and their corresponding ISO code
+    Then he should get a successful response with the full list of countries and their corresponding ISO code
 
   # The api works only with uppercase iso codes
   @Exception

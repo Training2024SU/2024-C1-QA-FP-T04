@@ -3,7 +3,7 @@ Feature: Basic operations SOAP API
   SO THAT I can calculate quantities and prices
 
   Scenario Outline: covert number to words
-    When The integration service requests the convertion of the number: <number>
+    When The integration service requests to convert the number: <number> to letters
     Then he should get the answer in words: <answer>
     Examples:
       | number | answer    |
