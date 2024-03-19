@@ -15,10 +15,10 @@ Feature: Basic operations SOAP API
     When The integration service sends a request to sum the numbers "3" plus "5"
     Then he should get a success answer "8"
 
-  Scenario: sum invalid integers
+  Scenario: Sum invalid integers
     When The integration service sends a request to sum the numbers "b" plus "5"
     Then he should get a bad request error response
 
-  Scenario: multiply two integers
+  Scenario: Multiply two integers
     When The integration service sends a request to multiply the numbers "4" times "8"
     Then he should get a success answer "32"
