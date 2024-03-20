@@ -1,3 +1,8 @@
+# Se que no debemos entregarlo en paginas web pero reorganizar todo me puede tomar facilmente otra hora
+asi que disculpa juan mejorare mi desempeño para los siguientes talleres
+tambien asi estaran mas organizados y mas facil para ti de leer
+
+
 # Reto Pruebas manuales
 
 ***“El único modo de hacer un gran trabajo es amar lo que haces” Steve Jobs***
