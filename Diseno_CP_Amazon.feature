@@ -16,6 +16,8 @@ Feature: Seleccion de Producto en una Tienda de Amazon
         |   camisa      |    50    |
         |   pantalon    |    51    |
         |   zapatos     |    48    |
+        |   gorra       |    52    |
+        |   aretes      |    49    |
 
       #busqueda_por_categoria
       Scenario: Se busca por categoria productos en Amazon
@@ -27,6 +29,8 @@ Feature: Seleccion de Producto en una Tienda de Amazon
         |   automotriz      |    camisa     |
         |   electronicos    |    pantalon   |
         |   libros          |    zapato     |
+        |   belleza         |    gorra      |
+        |   Musica          |    aretes     |
 
     @Seleccion_de_un_producto
       Scenario: Selecciona un producto de la busqueda en el carrito
@@ -72,4 +76,40 @@ Feature: Compra de Producto en Amazon
           When se confirma la informacion de envio
           Then Deberia requerir el metodo de pago
           And los datos necesarios para el pago
+
+  #-----------------------------------------------------
+
+Feature: Prueba de servicio Soap de suma
+  Yo como usuario registrado en Amazon
+  quiero proceder a confirmar los servicios Soap de suma
+  para poder verificar la contabilidad
+
+  Background:
+    Given el usuario registrado se encuentra el servicio Soap
+
+  @Suma_de_productos
+  Scenario: el usuario quiere agregar productos en el carrito
+    When se suma la cantidad 1 <cantidad1> y la cantidad 2 <cantidad2>
+    Then deberia recibir la suma <suma> de las cantidades
+    Examples:
+      |   cantidad1 |   cantidad2 | suma |
+      |             |             |  ?   |
+      |   ?         |     ?       |  ?   |
+      |   20        |     30      |  50  |
+      |   3         |     4       |  7   |
+      |   2000      |     5000    | 7000 |
+      | 90000000000 | 70000000000 | 160000000000 |
+    
+  @Resta_de_productos
+  Scenario: el usuario desea quitar productos del carrito
+    When se resta la cantidad1 <cantidad1> y la cantidad2 <cantidad2>
+    Then Deberia devolver la resta <resta> de los productos
+    Examples:
+      |   cantidad1 |   cantidad2 | resta |
+      |   ?         |     ?       |  ?    |
+      |   1         |     2       |  -1   |
+      |   30        |     20      |  10   |
+      |   4         |     3       |  1    |
+      |   5000      |     2000    | 3000  |
+
 
