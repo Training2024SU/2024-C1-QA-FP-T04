@@ -1,4 +1,5 @@
 # Solución reto de pruebas manuales
 
-- Los diseños de los casos de prueba se encuentran en la carpeta [features/](./features/)
-- Las reportes de ejecución se encuentran en la carpeta [tests-excecution/](./tests-excecution/)
+- [Diseño de los casos de prueba](./features/)
+- [Reportes de ejecución de pruebas](./tests-excecution/)
+- [Reporte de análisis estático](./static_analisis.pdf)
