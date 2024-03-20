@@ -1,0 +1,1 @@
+https://zippy-stew-3b9.notion.site/Plan-de-calidad-BestBuy-flujo-de-compra-servicios-de-SoapUI-5951151c457e44c1957dc7a37e3dc6eb?pvs=4
